@@ -1,0 +1,41 @@
+/*--------------------------------------
+Layout
+--------------------------------------*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+.column {
+    float: left;
+}
+
+.col-3-layout .column {
+    width: 33.33%;
+}
+
+.col-2-layout .column {
+    width: 50%;
+}
+
+.section::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
