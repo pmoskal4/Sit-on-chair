@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <title>Sit on chair</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
 </head>
 <body>
 
     <header class="site-header">
-        <div class="col-2-layout">
-            <div class="column">
-                <p class="logo">Sit <span class="textBlue">on</span> chair</p>
-            </div>
-            <div class="column">
-                <nav class="menu">
-                    <ul>
-                        <li>O firmie</li>
-                        <li>Galeria</li>
-                        <li>Kontakt</li>
+        <div class="container">
+            <div class="col-2-layout">
+                <div class="column">
+                    <p class="logo">Sit <span class="textBlue">on</span> chair</p>
+                </div>
+                <nav class="column">
+                    <ul class="site-menu">
+                        <li><a href="#">O firmie</a></li>
+                        <li><a href="#">Galeria</a></li>
+                        <li><a href="#">Kontakt</a></li>
                     </ul>
                 </nav>
             </div>
@@ -25,89 +26,108 @@
     </header>
 
     <section class="site-about">
-        <div class="col-2-layout">
-            <div class="column">
-                <img src="images/black_chair.png">
-            </div>
-            <div class="column">
-                <h1>Sit <span class="textBlue">on</span> our <span class="textBlue">chair</span></h1>
-                <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci corporis culpa dignissimos distinctio doloribus facilis harum minima necessitatibus nesciunt sapiente tempora, temporibus, veritatis. Accusantium corporis cumque nesciunt officiis, porro quibusdam.</p>
-                <input type="submit" name="more" value="Zobacz więcej">
+        <div class="container">
+            <div class="col-2-layout">
+                <div class="column">
+                    <img src="images/black_chair.png">
+                </div>
+                <div class="column">
+                    <h1>Sit <span class="textBlue">on</span> our <span class="textBlue">chair</span></h1>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci corporis culpa dignissimos distinctio doloribus facilis harum minima necessitatibus nesciunt sapiente tempora, temporibus, veritatis. Accusantium corporis cumque nesciunt officiis, porro quibusdam.</p>
+                    <input type="submit" name="more" value="Zobacz więcej">
+                </div>
             </div>
         </div>
     </section>
 
     <section class="site-products">
-        <div class="col-3-layout">
-            <div class=" product">
-                <img src="images/box1_img.jpg">
-                <p>Chair <span class="uppercase">clair</span></p>
-            </div>
-            <div class="column">
-                <img src="images/box2_img.jpg">
-                <p>Chair <span class="uppercase">margarita</span></p>
-            </div>
-            <div class="column">
-                <p>Finds all inputs</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, eum, ipsam. Dolore error inventore, nesciunt nihil nobis non nostrum numquam obcaecati quas quia ratione rerum tenetur ullam ut, veniam voluptatibus!</p>
+        <div class="container">
+            <div class="col-3-layout">
+                <div class=" column">
+                    <img src="images/box1_img.jpg">
+                    <p>Chair <span class="uppercase">clair</span></p>
+                </div>
+                <div class="column">
+                    <img src="images/box2_img.jpg">
+                    <p>Chair <span class="uppercase">margarita</span></p>
+                </div>
+                <div class="column moreProducts">
+                    <h4>Finds all inputs</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, eum, ipsam. Dolore error inventore, nesciunt nihil nobis non nostrum numquam obcaecati quas quia ratione rerum tenetur ullam ut, veniam voluptatibus!</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="site-offer">
-        <div class="col-3-layout">
-            <h2>Cennik</h2>
-            <div class="column">
-                <div class="priceTag">
-
+        <div class="container">
+            <div class="col-3-layout">
+                <h2>Cennik</h2>
+                <div class="column">
+                    <div class="priceTag">
+                        <h3>Basic plan</h3>
+                        <div class="priceCircle">
+                            <p class="price">85 99 <span>pln/msc</span></p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="column">
-                <div class="priceTag">
-
+                <div class="column">
+                    <div class="priceTag">
+                        <h3>Standard plan</h3>
+                        <div class="priceCircle">
+                            <p class="price">95 99 <span>pln/msc</span></p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="column">
-                <div class="priceTag">
-
+                <div class="column">
+                    <div class="priceTag">
+                        <h3>Advance plan</h3>
+                        <div class="priceCircle">
+                            <p class="price">210 00 <span>pln/msc</span></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="site-contact">
-        <div class="col-2-layout">
-            <h2>Kontakt</h2>
-            <div class="column">
-                <form>
-                    <input type="text" name="name" placeholder="Imię">
-                    <input type="email" name="mail" placeholder="email">
-                    <textarea name="msg" placeholder="Wiadomość"></textarea>
-                </form>
-            </div>
-            <div class="column">
-                <img src="images/red_chair.png">
-                <label>Zgadzam się na przetwarzanie danych osobowych
-                    <input type="checkbox">
-                </label>
-                <input type="submit" name="form-msg" value="Wyślij">
+        <div class="container">
+            <div class="col-2-layout">
+                <h2>Kontakt</h2>
+                <div class="column">
+                    <form class="contact-form">
+                        <input type="text" class="form-control" name="name" placeholder="Imię"><br>
+                        <input type="email" class="form-control" name="mail" placeholder="email"><br>
+                        <textarea name="msg" class="form-control" placeholder="Wiadomość"></textarea>
+                    </form>
+                </div>
+                <div class="column">
+                    <img src="images/red_chair.png"><br>
+                    <label>Zgadzam się na przetwarzanie <br>danych osobowych
+                        <input type="checkbox">
+                    </label>
+                    <input type="submit" name="form-msg" value="Wyślij">
+                </div>
             </div>
         </div>
     </section>
 
     <footer class="site-footer">
-        <div class="col-2-layout">
-            <div class="column">
-                <p class="copyright">Copyright 2014 | All Rights Reserved. - Sit On Chair</p>
-            </div>
-            <div class="column">
-                <ul class="socialMedia">
-                    <li><a href="#"><img src="images/flickr.png"></a></li>
-                    <li><a href="#"><img src="images/vimeo.png"></a></li>
-                    <li><a href="#"><img src="images/pinterest.png"></a></li>
-                    <li><a href="#"><img src="images/twitter.png"></a></li>
-                </ul>
-                <p class="logo">Sit on chair</p>
+        <div class="container">
+            <div class="col-2-layout">
+                <div class="column">
+                    <p class="copyright">Copyright 2014 | All Rights Reserved. - Sit On Chair</p>
+                </div>
+                <div class="column">
+                    <ul class="socialMedia">
+                        <li><span class="logo">Sit on chair</span></li>
+                        <li><a href="#"><img src="images/twitter.png"></a></li>
+                        <li><a href="#"><img src="images/pinterest.png"></a></li>
+                        <li><a href="#"><img src="images/vimeo.png"></a></li>
+                        <li><a href="#"><img src="images/flickr.png"></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
