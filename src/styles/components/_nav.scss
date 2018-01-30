@@ -1,0 +1,26 @@
+/*--------------------------------------
+Site - Header
+--------------------------------------*/
+
+.site-header {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.site-header .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-menu a {
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+}
+
+.site-menu li {
+  display: inline;
+  float: right;
+}

@@ -1,0 +1,24 @@
+/*--------------------------------------
+Site - Footer
+--------------------------------------*/
+
+.site-footer {
+  margin-top: 25px;
+  line-height: 35px;
+}
+
+.copyright {
+  color: grey;
+}
+
+.site-footer li {
+  display: inline;
+  float: right;
+  padding: 5px;
+}
+
+.site-footer li span {
+  text-transform: uppercase;
+  padding-left: 50px;
+  line-height: 35px;
+}

@@ -1,0 +1,23 @@
+.container {
+  max-width: 1200px;  //max szerokość- przyjmujemy 1200-1400px
+  margin: 0 auto;  //Centrujemy
+
+  .row {
+    margin: 5px 0; //Margines 20px top i bottom
+
+    @for $i from 1 through 12 {  //for dla column
+      .column-#{$i} {
+        width: ((100% / 12) * $i);  //Dzielimy 100% szerokości strony przez ilość kolumn i przypisujemy im szerokość w %
+        //float: left;  //Przypisujemy floata do kolumn
+        padding: 0 10px;  //Robimy guttery między elementami
+        min-height: 1px;
+      }
+    }
+
+    &:after {  //Czyścimy floaty
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+}
