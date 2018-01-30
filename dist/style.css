@@ -11,7 +11,7 @@ Layout
 .container {
     width: 1200px;
     margin: 0 auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .column {
@@ -35,6 +35,14 @@ Layout
 
 body {
     font-family: Raleway, sans-serif;
+}
+
+.relative {
+    position: relative;
+}
+
+.textBlue {
+    color: #00C3A0;
 }
 
 /*--------------------------------------
@@ -92,6 +100,12 @@ Site - About
     margin-right: 200px;
     margin-top: 20px;
     padding: 10px 30px 10px 30px;
+}
+
+.prevPicture,
+.nextPicture {
+    display: block;
+    font-size: 100px;
 }
 
 /*--------------------------------------

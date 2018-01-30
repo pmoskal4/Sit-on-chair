@@ -5,3 +5,7 @@ warsztat1.jpg
 /* Files created by WebStorm */
 
 /.idea/
+
+/* Node modules */
+
+node_modules
