@@ -6,15 +6,19 @@ Site - Products
   margin: 25px auto;
 }
 
-.site-products div.column {
-  padding-left: 20px;
+.site-products .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-products .column {
+  width: 33.33%;
+  margin: 0 20px;
 }
 
 .moreProducts {
-  height: 225px;
-  position: relative;
-  right: 20px;
   border: 1px solid grey;
+  padding: 0 15px;
 }
 
 .moreProducts h4 {
