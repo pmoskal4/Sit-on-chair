@@ -14,11 +14,17 @@ Site - Slider
   padding: 10px;
 }
 
+.slider img {
+  width: 650px;
+}
+
 .slider .column {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 40%;
+  width: 50%;
+  margin-left: -50px;
+  margin-right: 50px;
 }
 
 .site-slider h1 {
@@ -42,7 +48,7 @@ Site - Slider
 
 .prevPicture,
 .nextPicture {
-  margin-top: 100px;
+  margin-top: 150px;
   font-size: 100px;
   color: #00C3A0;
 }
