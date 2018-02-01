@@ -2,14 +2,50 @@
 Site - Contact
 --------------------------------------*/
 
-.site-contact {
+.site-contact .container {
+  display: flex;
+}
+
+.site-contact .container .column {
+  width: 33.33%;
+}
+
+.site-contact h2 {
+  margin-top: 40px;
+  margin-left: 20px;
+  font-weight: 400;
+  margin-right: 20px;
+}
+
+.site-contact h2:after {
+  content: "";
+  display: block;
+  background-color: #00D1AC;
+  width: 100%;
+  height: 5px;
+}
+.columnRight {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: 0 20px 0 100px;
+}
+
+.columnRight img {
+  width: 70%;
   position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.site-contact .container .column-form {
+  width: 65%;
 }
 
 .contact-form {
   margin-top: 25px;
-  margin-left: 50px;
-  margin-right: -100px;
+  margin-left: 20px;
 }
 
 .form-control {
@@ -22,33 +58,27 @@ Site - Contact
 }
 
 textarea {
-  height: 180px;
+  height: 230px;
 }
 
-.site-contact img {
-  margin-left: 220px;
+.checkbox {
+  width: 40px;
+  height: 40px;
 }
 
-.site-contact label {
-  position: absolute;
-  top: 250px;
-  right: 280px;
+.columnRight p {
+  position: relative;
+  bottom: 45px;
+  left: 45px;
   font-size: 20px;
-}
-
-input[type="checkbox"] {
-  position: absolute;
-  left: -40px;
-  top: 5px;
-  transform: scale(2);
-  outline-color: #00C3A0;
+  margin-bottom: -30px;
 }
 
 .site-contact input[type=submit] {
-  margin-top: 60px;
-  margin-left: 200px;
-  width: 330px;
-  height: 50px;
+  font-size: 40px;
+  font-weight: 700;
+  width: 100%;
+  height: 80px;
   color: #fff;
   background-color: #00C3A0;
   border-radius: 10px;
