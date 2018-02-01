@@ -7,8 +7,19 @@ Site - Footer
   line-height: 35px;
 }
 
+.site-footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
 .copyright {
   color: grey;
+}
+
+#bold {
+  font-weight: 700;
+  padding-left: 0;
 }
 
 .site-footer li {
