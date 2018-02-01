@@ -16,9 +16,29 @@ Site - Products
   margin: 0 20px;
 }
 
+.clair,
+.margarita {
+  position: relative;
+  bottom: 90px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  width: 100%;;
+  background-color: rgba(255,255,255,0.5);
+}
+
+h4:after {
+  content: "";
+  display: block;
+  background-color: #00D1AC;
+  width: 40%;
+  height: 5px;
+}
+
 .moreProducts {
   border: 1px solid grey;
   padding: 0 15px;
+  height: 270px;
 }
 
 .moreProducts h4 {
