@@ -6,6 +6,21 @@ Site - Offer
   background-color: #F1F1F1;
 }
 
+.site-offer h2 {
+  margin-top: 40px;
+  margin-left: 20px;
+  font-weight: 400;
+  margin-right: 20px;
+}
+
+.site-offer h2:after {
+  content: "";
+  display: block;
+  background-color: #00D1AC;
+  width: 100%;
+  height: 5px;
+}
+
 .site-offer .container {
   display: flex;
   justify-content: space-between;
@@ -16,13 +31,57 @@ Site - Offer
   width: 33.33%;
 }
 
+.site-offer h3 {
+  color: #00D1AC;
+}
+
 .priceTag {
   text-align: center;
   background-color: #F9F9F9;
-  margin: 20px;
-  height: 400px;
+  margin: 20px 20px 60px 20px;
+  height: 500px;
   border: 1px solid grey;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.priceTag:before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 50%;
+  top: -35px;
+  transform: translateX(-50%);
+  background-color: #F9F9F9;
+  border: 1px solid grey;
+  border-radius: 50%;
+}
+
+.priceTag:after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 50%;
+  top: -20px;
+  transform: translateX(-50%);
+  background-color: grey;
+  border: 1px solid #F9F9F9;
+  border-radius: 50%;
+}
+
+.priceTag.selected:before {
+  background-color: #00D1AC;
+  border: 1px solid #00D1AC;
+}
+
+.priceTag.selected:after {
+  background-color: #F9F9F9;
 }
 
 .priceTag h3 {
@@ -31,37 +90,62 @@ Site - Offer
   left: 0;
   right: 0;
   margin: auto;
+  font-weight: 400;
+  font-size: 24px;
 }
 
 .priceTag.selected {
   background-color: #00D1AC;
+  border: 1px solid #00D1AC;
+}
+
+.priceTag.selected h3 {
+  color: white;
 }
 
 .priceCircle {
   position: absolute;
-  top: -150px;
+  top: -225px;
   left: 0;
   right: 0;
   bottom: 0;
   margin: auto;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border: 1px solid grey;
   border-radius: 50%;
   background-color: #fff;
 }
 
+.priceTag.selected .priceCircle {
+  border: 1px solid #00D1AC;
+  color: #00D1AC;
+}
+
 .priceCircle .price {
-  padding-top: 25px;
+  padding-top: 35px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 25px;
+}
+
+.priceCircle .price .currency {
+  font-size: 20px;
+}
+
+.priceCircle .price .small {
+  font-size: 15px;
+  position: relative;
+  bottom: 15px;
 }
 
 .options {
-  margin-top: 180px;
+  margin-top: 220px;
   list-style: none;
 }
 
 .options li {
-  padding-top: 10px;
+  padding: 10px;
   font-size: 20px;
 }
 
@@ -71,4 +155,20 @@ Site - Offer
 
 .options li:nth-child(even) {
   background-color: #F1F1F1;
+}
+
+.priceTag input {
+  font-size: 16px;
+  width: 40%;
+  align-self: center;
+  height: 40px;
+  background-color: #00D1AC;
+  color: #fff;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.priceTag.selected input {
+  background-color: #fff;
+  color: #00D1AC;
 }
